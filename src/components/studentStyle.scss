@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$widthBody: 1440px;
+
+.containerBody {
+    width: 100vw;
+
+    .contentBody {
+        width: $widthBody;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+
+        .leftContent {
+            background-color: white;
+            width: 60%;
+
+            .studentTool {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                //width: 60%;
+                height: 50px;
+                padding: 0 20px;
+                background-color: rgb(247 247 247);
+
+                .btnAdd {
+                    padding: 5px 10px;
+                    height: 30px;
+                    background-color: rgb(23 45 136);
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    color: white;
+                }
+
+                .search {
+                    input {
+                        height: 30px;
+                        padding: 5px;
+                    }
+
+                    .btnSearch {
+                        height: 30px;
+                        padding: 5px 10px;
+                        background-color: rgb(23 45 136);
+                        border: 1px solid black;
+                        border-radius: 5px;
+                        color: white;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .listStudent {
+                background-color: white;
+                padding: 20px;
+                border-radius: 0 0 20px 20px;
+                box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+
+                .titleTable {
+                    padding-bottom: 10px;
+                }
+
+                table {
+                    border: 1px solid gray;
+                    border-collapse: collapse;
+                    //width: 60%;
+
+                    th,
+                    td {
+                        border: 1px solid black;
+                        padding: 20px;
+
+                        button {
+                            height: 30px;
+                            padding: 0 10px;
+                            margin: 10px;
+                            border: 1px solid gray;
+                            color: white;
+                            border-radius: 5px;
+                        }
+
+                        .btnReset {
+                            background-color: rgb(249 95 82);
+                        }
+
+                        .btnUpdate {
+                            background-color: rgb(252 173 0);
+                        }
+
+                        .btnDelete {
+                            background-color: rgb(53 177 170);
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+
+        .rightContent {
+            width: 35%;
+
+            .studentForm {
+                width: 100%;
+                margin: 0 30px;
+                padding: 20px;
+                border-radius: 0 0 20px 20px;
+                box-shadow: -5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+
+                h2 {
+                    padding: 10px 0;
+                }
+
+                div {
+                    position: relative;
+                    padding: 5px 0;
+                    margin: 10px 0;
+
+                    input {
+                        position: absolute;
+                        left: 150px;
+                        bottom: 0;
+                        height: 30px;
+                        width: 300px;
+                        padding: 0 5px;
+                    }
+
+                    button {
+                        height: 30px;
+                        border-radius: 5px;
+                        background-color: rgb(31 60 179);
+                        padding: 0 10px;
+                        color: white;
+                        border: 1px solid gray;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+}
